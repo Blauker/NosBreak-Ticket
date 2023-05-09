@@ -1,3 +1,5 @@
 # General Info
-this bot is created by Blauker for 
-This bot will notify to the tagged user when a raid starts (Demon raid or Angel raid).
+Created by Blauker for NosBreak
+
+# What is this?
+Discord.js bot for NosBreak discord server, will manage ticket system, pinging user and staff after a ticket is created.
