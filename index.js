@@ -3,10 +3,6 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 const config = require('./config.json');
 
 const NosBreakSV = "1023616596226351114";
-const Reku = "1081379574555889785";
-const TestCH = "958722817967390760";
-
-
 
 client.on('ready', () => {
     console.log('The client is ready!');
@@ -18,22 +14,6 @@ client.on('messageCreate', msg => {
     const args = msg.content.slice(prefix.lenght).split(/ +/);
     const preCommand = args.shift().toLowerCase();
     const command = preCommand.substring(1);
-
-    if (msg.content.startsWith(prefix))
-    {
-        if (msg.author.id == Reku)
-        {
-            if (command == "ticket")
-            {
-                const CreateTicket = new MessageEmbed()
-                    .setColor(0x42e37d)
-                    .setTitle("Create Ticket")
-                    .setDescription("Your ticket has been sucessfully created!");
-
-                msg.channel.send({embeds: [CreateTicket]});
-            }
-        }
-    }
 
     if (msg.guild.id == NosBreakSV)
     {
